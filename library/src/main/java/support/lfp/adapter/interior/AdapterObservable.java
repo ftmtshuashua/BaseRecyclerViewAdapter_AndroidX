@@ -98,7 +98,7 @@ public abstract class AdapterObservable<D> extends AdapterDataManager<D> {
      * @param what 消息类型
      * @param obj  消息中携带数据
      */
-    protected void sendMessage(final int what, final Object obj, final int position) {
+    public void sendMessage(final int what, final Object obj, final int position) {
         Utils.map(mViewHolderMessageHandler, new Utils.Action1<AdapterObservable.ViewHolderMessageHandler>() {
             @Override
             public void call(AdapterObservable.ViewHolderMessageHandler viewHolderMessageHandler) {
