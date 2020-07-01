@@ -1,4 +1,4 @@
-BaseRecyclerViewAdapter是一个RecyclerView的万能适配器，它的内部维护一个数据集合，当数据发生变化的时候自动反映到UI上。
+BaseRecyclerViewAdapter_AndroidX是一个RecyclerView的万能适配器，它的内部维护一个数据集合，当数据发生变化的时候自动反映到UI上。
 
 >ItemView点击长按事件监听
 
@@ -11,7 +11,7 @@ BaseRecyclerViewAdapter是一个RecyclerView的万能适配器，它的内部维
 >AndroidX
 
 
-## BaseRecyclerViewAdapter
+## BaseRecyclerViewAdapter_AndroidX
 内部维护多个数据集合，它会根据数据的变化自动更新UI
 >set()
 >add()
@@ -80,10 +80,10 @@ allprojects {
     }
 }
 ```
-在Model的build.gradle中添加 [![](https://jitpack.io/v/ftmtshuashua/BaseRecyclerViewAdapter.svg)](https://jitpack.io/#ftmtshuashua/BaseRecyclerViewAdapter)
+在Model的build.gradle中添加 [![](https://jitpack.io/v/ftmtshuashua/BaseRecyclerViewAdapter_AndroidX.svg)](https://jitpack.io/#ftmtshuashua/BaseRecyclerViewAdapter_AndroidX)
 ```
 dependencies {
-    implementation 'com.github.ftmtshuashua:BaseRecyclerViewAdapter:version'
+    implementation 'com.github.ftmtshuashua:BaseRecyclerViewAdapter_AndroidX:version'
 }
 ```
 需要库
@@ -161,7 +161,7 @@ public class ViewHolderMessageActivity extends Activity {
 ## LICENSE
 
 ```
-Copyright (c) 2018-present, BaseRecyclerViewAdapter Contributors.
+Copyright (c) 2018-present, BaseRecyclerViewAdapter_AndroidX Contributors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
