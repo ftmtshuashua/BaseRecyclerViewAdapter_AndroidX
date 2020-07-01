@@ -37,7 +37,7 @@ public abstract class ViewHolderDataManager<D> extends RecyclerView.ViewHolder {
      * @param <T> adapter
      * @return
      */
-    protected <T extends BaseRecyclerViewAdapter<D>> T getAdapter() {
+    public <T extends BaseRecyclerViewAdapter<D>> T getAdapter() {
         if (mAdapter instanceof BaseRecyclerViewAdapter) return (T) mAdapter;
         return null;
     }
@@ -76,14 +76,14 @@ public abstract class ViewHolderDataManager<D> extends RecyclerView.ViewHolder {
      * @param what 消息类型
      * @param obj  消息中携带数据
      */
-    protected final void sendMessage(final int what, final Object obj) {
+    public final void sendMessage(final int what, final Object obj) {
         getAdapter().sendMessage(what, obj, getAdapterPosition());
     }
 
     /**
      * 通知数据变化，ViewHolder会通知通过Adapter.setOnAdapterDataChangeListener()方法设置的监听器
      */
-    protected final void notifyDataChange() {
+    public final void notifyDataChange() {
         getAdapter().notifyDataChange();
     }
 
